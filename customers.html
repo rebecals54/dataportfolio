@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Analyzing Customer Churn - Excel Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Milena Ribeiro</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="about.html">Sobre mim</a></li>
+						<li><a href="#footer">Contatos</a></li>
+						 <div class="dropup">
+							<button class="dropbtn">Projetos</button>
+								<div class="dropup-content">
+									<a href="python.html">Python</a>
+									<a href="excel.html">Excel</a>
+									<a href="salesbi.html">Power BI</a>
+								</div>
+						 </div>	
+					</ul>						
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Detalhes do Projeto</h1>
+									</header>
+									<!--<span class="image main"><img src="images/pic11.jpg" alt="" /></span> -->
+									<h2>Objetivo</h2>
+									<p>Compreender os motivos que levam à saída dos clientes de um provedor fictício de telecomunicações, a DataBel, e oferecer insights estratégicos para melhorar a retenção.</p>
+									<a href="https://github.com/mileribeiro/portfolio-projects/blob/main/solution_final.xlsx" target="_blank">Download no GitHub!</a>
+									<p></p>
+
+									<h2>Metodologia</h2>
+									<p>Foi fornecido dois conjuntos de dados diferentes nas seguintes planilhas: Databel - Aggregate e Databel - Customer. Para iniciar o projeto, foi realizada limpeza de dados para garantir análises precisas. Isto incluiu a remoção de entradas duplicadas para evitar possíveis distorções no conjunto de dados. Além disso, os dados foram atualizados para serem mais interpretáveis, como uso de condicional na criação de colunas e transformação de dados para destacar informações críticas. </p>
+									<img src="images/data_base.png" alt="Excel Worksheet after Data Cleaning" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig. 1: Esta imagem mostra o conjunto de dados depois de limpo.</i></p>
+									
+									<h2>Analise</h2>
+									<p>Agora que temos dados limpos, podemos realizar análises exploratórias de dados para obter insights e padrões nos dados.</p>
+									<h4>Questionamentos Estratégicos:</h4>
+									<p>Durante o projeto, foram levantados os seguintes questionamentos-chave para entender a dinâmica da rotatividade de clientes na DataBel:</p>
+									<ol>
+										<li><b>Quais são os principais motivos de rotatividade?</b></li>
+										<p>Foi identificado que a categoria mais significativa é a de clientes que saem devido a ofertas da concorrência. Em específico, foi analisado: <b>Qual percentual de clientes abandonou o serviço porque "o concorrente fez uma oferta melhor"?</b> Esse insight fornece um ponto de partida para uma análise mais aprofundada sobre a competitividade de mercado.</p>
+										<img src="images/customer_pivots.png" alt="Customers Pivot Table" style="width:1000px;height:500px;" data-position="center center" />
+										<p><i>Fig. 2: Esta imagem mostra as tabelas dinâmicas com os principais motivos de desligamento.</i></p>
+										<li><b>Qual grupo demográfico apresenta a maior taxa de rotatividade?</b></li>
+										<p>A análise revelou que idosos são mais propensos a abandonar o serviço. Isso sugere a necessidade de um olhar mais atento sobre a <b>idade dos clientes</b>, permitindo personalizar estratégias de retenção com base nesse perfil.</p>
+										<li><b>A hipótese sobre planos de dados ilimitados</b></li>
+										<p>A DataBel acredita que clientes sem um plano de dados ilimitado têm maior probabilidade de cancelar o serviço. Essa hipótese foi investigada, e os resultados mostraram como a ausência desse benefício impacta a fidelidade.</p>
+										<img src="images/churn_analysis.png" alt="Churn Pivot Table" style="width:1000px;height:500px;" data-position="center center" />
+										<p><i>Fig. 3: Esta imagem mostra as tabelas dinâmicas que combinam faixas etárias e taxas de abandono.</i></p>
+										<li><b>Qual a relação entre atividade internacional e rotatividade?</b></li>
+										<p>Por fim, foi analisado o comportamento de clientes que fazem chamadas internacionais. A empresa estava curiosa para entender se pagar por um <b>plano internacional</b> influencia positivamente a retenção. Esse insight ajudará a DataBel a decidir se vale a pena incentivar ou ajustar esses planos como estratégia de fidelização.</p>
+									</ol>
+
+									<p>Esses questionamentos orientaram as análises e trouxeram à tona valiosos insights que podem direcionar ações estratégicas para melhorar a retenção de clientes.</p>
+
+									<h3>Principais descobertas</h3>
+
+									<p>Para facilitar a visualização de todas essas informações, criei um painel que exibe todos os gráficos. Usando o painel, conseguimos determinar os seguintes insights:</p>
+									<img src="images/dashboard_excel.png" alt="Overview" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig. 4: Esta imagem mostra o overview final da rotatividade de clientes.</i></p>
+									<ul>
+										<li><b>Churn label:</b> Qual é a taxa total de rotatividade de Databel? 26.86%</li>
+										<li><b>Churn reasons:</b> Os 3 principais motivos de rotatividade são: 
+										<ul>
+											<li>Concorrente fez oferta melhor</li>
+											<li>O concorrente tinha dispositivos melhores</li>
+											<li>Atitude da pessoa de apoio</li>
+										</ul> 
+										<li><b>Competitor Churn Analysis:</b> Qual % de clientes saiu devido a "O concorrente fez uma oferta melhor"? 37.64%</li>
+										<li><b>Churn by Demographics:</b> Qual grupo demográfico tem a maior taxa de rotatividade? Senior</li>
+										<li><b>Age Group Analysis:</b> Qual faixa etária representa o menor número de clientes, mas a maior taxa de rotatividade? 79-88</li>
+										<li><b>Consumption Churn:</b> Qual é a taxa de rotatividade para pessoas em um plano ilimitado que consomem menos de 5 GB de dados? 34.69%</li>
+										<li><b>Churn Rate:</b> Parece que há um estado que tem clientes em um plano internacional que tem uma porcentagem particularmente alta de churners: CA</li>										
+									</ul>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<section class="split">
+					<section>
+						<h4>Informações de Contato</h4>															
+						</section>
+					</section>
+				</div>
+			</section>
+	
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="mailto:eng.milenaribeiro@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">E-mail</span></a></li>
+						<li><a href="https://github.com/mileribeiro" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/engmilenaribeiro/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
