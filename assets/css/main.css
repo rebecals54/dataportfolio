@@ -2151,7 +2151,7 @@ input, select, textarea {
 	}
 
 	a.icon.alt:hover:before {
-		background-color: #6fc3df;
+		background-color: #30A3C2;
 	}
 
 	a.icon.alt:active:before {
@@ -2831,7 +2831,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #30A3C2;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
@@ -3260,7 +3260,7 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: #30A3C2;
 			}
 
 			#header.alt.style2 .logo strong {
@@ -3524,7 +3524,7 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: #30A3C2;
 		}
 
 		#banner.style2:after {
@@ -3995,6 +3995,7 @@ input, select, textarea {
 			visibility: visible;
 
 		}
+
 
 
 
