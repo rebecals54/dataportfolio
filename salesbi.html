@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title> Analisando vendas da concorrência - Power BI Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Milena Ribeiro</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="about.html">Sobre mim</a></li>
+						<li><a href="#footer">Contatos</a></li>
+						 <div class="dropup">
+							<button class="dropbtn">Projetos</button>
+								<div class="dropup-content">
+									<a href="python.html">Python</a>
+									<a href="excel.html">Excel</a>
+									<a href="salesbi.html">Power BI</a>
+							</div>
+						 </div>	
+					</ul>						
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Detalhes do Projeto</h1>
+									</header>
+									<!--<span class="image main"><img src="images/pic11.jpg" alt="" /></span> -->
+									<h2>Objetivo</h2>
+									<p>Este projeto tem como objetivo fornecer uma visão estratégica sobre as vendas e a participação de mercado da empresa Sintec em comparação aos fabricantes concorrentes. O dashboard oferece insights tanto sobre o desempenho interno dos produtos quanto sobre a competitividade externa no mercado. Com base nos dados, os usuários empresariais podem tomar decisões informadas e implementar ações para melhorar resultados, identificar tendências e ajustar estratégias.</p>
+
+									<h2>Principais ferramentas e metodologias utilizados</h2>
+									<p>Para alcançar o objetivo, as seguintes ferramentas, metodologias e base de dados foram empregadas:</p>
+									<ol>
+										<li><b>Base de dados:</b></li>
+									<ul>
+										<ul>
+											<li><b>Planilhas em Excel:</b> as tabelas <b>Geography</b>, <b>Manufacture</b> e <b>Products</b>, exportadas da planilha <b>bi_dimensions</b>.</li>
+											<li><b>Arquivo CSV de vendas:</b> o arquivo <b>sales.csv</b> contém dados essenciais para a análise de receitas e tendências de vendas.</li>
+											<li><b>Conexão com pastas:</b> utilizando o recurso <b>Folder Connect</b> no Power BI, foi criada uma conexão com a pasta <l>Internacional Sales</l>.</li>
+										</ul>
+									</ul>
+										<li><b>Conceitos de ETL (Extract, Transform, Load)</b>: os dados foram extraídos, transformados e carregados no Power BI para garantir consistência, qualidade e integração entre as diferentes fontes.</li>
+										<img src="images/dadosbi.jpeg" alt="Dados extraídos, transformados e carregados no Power BI  e" style="width:1000px;height:500px;" data-position="center center" />
+										<p><i>Fig. 1: Dados extraídos, carregados e transformados no Power BI.</i></p>
+										<p>Todas as bases de dados foram acessadas a partir do site <b>Amazon S3</b>, proporcionando uma base densa e robusta, com tabelas que possuem <b>mais de 1000 linhas</b>. Essa densidade de dados contribuiu para extrair insights valiosos e detalhados.</p>
+										<li><b>Medidas DAX:</b> foram criadas medidas personalizadas para cálculos avançados, como crescimento de receita, média de vendas por fabricante, e participação de mercado em diferentes regiões.</li>
+										<img src="images/growth.png" alt="KPI que monitora o crescimento de vendas podendo ser associado a outras indicadores." style="width:500px;height:150px;" data-position="center center" />
+										<p><i>Fig. 2: KPI que monitora o crescimento de vendas.</i></p>
+										<p>Com a <b>%Growth</b>, foi possível visualizar o desempenho da receita ao longo de períodos específicos. Isso revelou não apenas os produtos em maior crescimento, mas também as regiões com o maior potencial de retorno sobre investimentos.</p>
+										<ul>
+											<li><b>Resposta a questionamentos críticos:</b> combinando essas ferramentas, é possível responder perguntas-chave, como: <i>Qual é o % de crescimento do produto Sintec UE-16 na categoria Extreme para o ano de 2020?</i></li>
+											<img src="images/sintec_ue16.png" alt="Dados extraídos, transformados e carregados no Power BI  e" style="width:1000px;height:500px;" data-position="center center" />
+											<p><i>Fig. 4: Com o gráfico de receita por ano filtrado para o ano de 2020 e o fornecedor Sintec selecionado foi possível observar que a %Growth para o produto Sintec UE-16 naquele ano é de <b>51,08%</b>.</i></p>
+										</ul>
+										<li><b>Visuais baseados em IA:</b> utilizados para identificar padrões ocultos, realizar análises preditivas e detectar tendências nos dados, fornecendo insights além da simples visualização estáticas.</li>
+										<img src="images/visuais_IA.png" alt="Dados extraídos, transformados e carregados no Power BI  e" style="width:1000px;height:500px;" data-position="center center" />
+										<p><i>Fig. 3: Insights Avançados usando visuais baseados em IA.</i></p>
+										<p>Com a <b>Árvore de Decomposição</b>, identifiquei os fatores que mais influenciam o aumento da receita do fabricante Sintec. Já os <b>Principais Influenciadores</b> ajudaram a compreender quais os produtos ou regiões têm maior impacto nas vendas, orientando estratégias específicas.</p>
+										<ul>
+											<li><b>Resposta a questionamentos críticos:</b> combinando essas ferramentas, é possível responder perguntas-chave, como: <i>Nos EUA, quanto a receita média aumenta quando o produto é Sintec UC-19?</i></li>
+											<img src="images/sintec_uc19.png" alt="Dados extraídos, transformados e carregados no Power BI  e" style="width:1000px;height:500px;" data-position="center center" />
+											<p><i>Fig. 4: Com a ferramenta drill-through foi possível filtrar o país, o fornecedor Sintec foi selecioado e assim observou-se que a receita média para o produto Sintec UC-19 aumenta em <b>291</b>.</i></p>
+										</ul>
+									</ol>
+									
+									<h2>Análise</h2>
+									<p>Agora com um relatório interativo os executivos da Sintec podem usar para fazer vendas, análise em comparação com seus principais concorrentes no mercado e tomar as medidas correstas com base em seus dados. Usando este relatório, a equipe executiva da Sintec pode facilmente se aprofundar em seus dados históricos de vendas e obter insights avançados de seus dados. Isso lhes permitirá tomar decisões de negócio mais informadas, não apenas obtendo os insights mais, também, executando as ações no momento certo.</p>
+									<h4>Principais perguntas respondidas:</h4>
+									<ol>
+										<li>O fabricante Sintec tem um participação de mercado de <b>31,51%</b> nos EUA e é lider em comparação com outros fabricantes.</li>
+										<img src="images/questionamento1.png" alt="Participação Sintec no mercado" style="width:1000px;height:500px;" data-position="center center" />
+										<p><i>Fig. 2: Participação da Sintec no mercado.</i></p>
+										<li>Um descoberta crucial é que o princial concorrente da Sintec são os <b>artesãos</b>, gerando <b>mais de 50%</b> da participação de mercado em comparação com os outros quatro fabricantes na <b>Alemanha</b>.</li>
+										<img src="images/questionamento2.png" alt="Concorrentes Sintec" style="width:1000px;height:450px;" data-position="center center" />
+										<p><i>Fig. 3: Analisando concorrentes.</i></p>
+										<li>O primeiro trimestre de 2021 viu o maior <b>crescimento percentual de 19,63%</b> em comparação com o ano passado.</li>
+										<img src="images/questionamento3.png" alt="Análise do trimestre" style="width:1000px;height:500px;" data-position="center center" />
+										<p><i>Fig. 2: Analisando o crecimento trimestral de 2021.</i></p>
+									</ol>
+								<p>Esses questionamentos orientaram as análises e trouxeram à tona valiosos insights que podem direcionar ações estratégicas para melhorar a retenção de clientes.</p>
+
+									<h3>Principais descobertas</h3>
+									<p>Foram abordados tópicos desde integração de dados, transformação, modelagem, análise exploratória de dados, cálculo e visualização DAX.</p>
+									<img src="images/analise_vendas.png" alt="Análise de Vendas" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig. 4: Dashboard de análise de vendas.</i></p>
+									<img src="images/visuais_IA.png" alt="Visuais com IA" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig. 4: Dashboard de visuais com uso de IA.</i></p>
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<section class="split">
+					<section>
+						<h4>Informações de Contato</h4>															
+						</section>
+					</section>
+				</div>
+			</section>
+	
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="mailto:eng.milenaribeiro@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">E-mail</span></a></li>
+						<li><a href="https://github.com/mileribeiro" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/engmilenaribeiro/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
